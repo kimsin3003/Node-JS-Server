@@ -1,0 +1,27 @@
+{
+  currency: {
+    name: 'United States dollars',
+    abbrev: 'USD'
+  },
+  tours: [
+    {name: 'Hood River', price: '$99.95'},
+    {name: 'Oregon Coast', price: '$159.95'}
+  ],
+  specialsUrl: '/January-specials',
+  currencies: [ 'USD', 'GBP', 'BTC' ]
+};
+
+<!--Im in a new block...and the context has changed-->
+<li/> Hood River - $99.95 USD
+<li/> Oregon Coast - $159.95 USD
+
+<!-- I'm in a new block ... but the context hasn't changed (sortof)-->
+<li/>Check out our specials!(to '/January-specials')
+<li/>Please check back often for specials.
+
+
+
+* Hood River - $99.95 USD
+* Oregon Coast - $159.95 USD
+
+Check out our specials!(to '/January-specials')

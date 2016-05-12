@@ -1,0 +1,9 @@
+<%include header.html%>
+<h3> Users </h3>
+<ul>
+    <% users.forEach(function(user, i){%>
+      <li><%=i%> <%=user.name %>: <%=user.phone %> </li>
+    <% }); %>
+</ul>
+
+<%include footer.html%>

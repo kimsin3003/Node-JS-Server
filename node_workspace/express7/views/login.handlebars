@@ -1,0 +1,11 @@
+{{#if login_ok }}
+  {{{login_id}}}님 환영합니다.
+  <a href='/login_out'>로그아웃</a>
+
+{{else}}
+  <form action="/login_do?form=login" method="post">
+    id: <input type="text" name="id"><br>
+    pw: <input type="password" name="pw"><br>
+    <input type="submit" value="로그인">
+  </form>
+{{/if}}
